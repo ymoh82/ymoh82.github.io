@@ -85,37 +85,106 @@ class Product {
 	constructor(size, color) {
 		this.size = size
 		this.color = color
+		this.quantity = 1
 	}
 }
 
 function addToCart() {
-  var size = document.getElementsByName('size');
+  var size = document.getElementById('p-size').innerText.split(':')[0].replace(/[a-z]/g, '').replace('-', '');
   //size is an array of the four inputs from HTML page
 
   
-	var color = document.getElementsByName("color");
+	var color = document.getElementById("p-color").innerText.replace(':', '').toLowerCase().replace(/\s/g, '');
   //color is an array of the three inputs from our HTML page
 
-		
+  if (!color || !size) return;
+  
 	
   var item = new Product(size, color);
-  productArr.push(item);
-  //Set the product order in local storage
-	window.localStorage.setItem('order', JSON.stringify(productArr));
-  console.log(productArr);
+  
+  cart.add(item);
+
+  alert("Item added!");
 	
-	updateCartNumber(productArr.length);
+	updateCartNumber();
 }
 
 function updateCartNumber() {
-  let productArrString = window.localStorage.getItem('order');
-  let productArr = JSON.parse(productArrString);
-	var cartCount = document.getElementById('cartCount');
-  cartCount.innerHTML = productArr.length + " Item(s)";
-
+  cartCount.innerHTML = cart.read().length + " Item(s)";
 }
 
+function handleClickRemove(index) {
+  const item = cart.read()[index];
 
+  if (item.quantity === 1) {
+    return cart.remove(index);
+  }
+
+  const count = +prompt(`There are ${item.quantity} items. How many do you want to delete?`).trim();
+  cart.decrease(index, count);
+}
+
+function updateCartList() {
+  const backgroundImageMap = {
+    brown: 'brownmain.png',
+    darkblue: 'bluemain.png',
+    blue: 'item3.jpg',
+  };
+
+  const cartList = document.getElementById('cart-list');
+
+  if (!cartList) return;
+
+  cartList.innerHTML = `
+  <tr class="category" id="cart-category">
+    <th class="th_des">Description</th>
+    <th class="th_siz">Size</th>
+    <th class="th_col">Color</th>
+    <th class="th_qua">Quantity</th>
+    <th class="th_rem"> Remove</th>
+    <th class="th_pri">Price</th>
+  </tr>
+  ` + cart.read().map((item, index) => `
+    <tr class="first_row">
+      <td class="description">
+        <div class="item" style="background-image: url(muddypaw_img/${backgroundImageMap[item.color]})"></div>
+        <p>Harness, <br> Dog</p>
+      </td>
+      <td class="sizebox">
+        <div class="size_box">${item.size}</div>
+      </td>
+      <td class="colorbox">
+        <div class="color_box">
+          <div class="colorcirc" style="background-color:${item.color}"></div>
+        </div>
+      </td>
+      <td class="quantity">
+        <div class="decrease" onclick="cart.decrease(${index});updateCartList()">-</div>
+        <div class="counter">${item.quantity}</div>
+        <div class="increase" onclick="cart.increase(${index});updateCartList()">+</div>
+      </td>
+      <td class="remove">
+        <div class="remove_box" onclick="handleClickRemove(${index});updateCartList()">X</div>
+      </td>
+      <td class="price">
+        <span>$${(20 * item.quantity).toFixed(2)}</span>
+      </td>
+    </tr>
+  `).join(' ');
+
+  let totalPrice = 0;
+
+  cart.read().forEach(item => {
+    totalPrice += item.quantity * 20;
+  });
+
+  document.querySelector('.total span').innerHTML = `$${totalPrice.toFixed(2)}`
+}
+
+window.addEventListener("load", () => {
+  updateCartNumber();
+  updateCartList();
+})
 
 
 /*
@@ -133,10 +202,6 @@ Then that reciving page decodes the string and makes it back into an object(s)
 
 function goToCheckoutPage() {
 	updateCartNumber();
-	
-  var loadedProductArr = window.localStorage.getItem('order')
-  console.log(loadedProductArr)
-	var productArr2 = JSON.parse(loadedProductArr)
 	
 	//At this point, productArr2 is the same as productArr
 	
