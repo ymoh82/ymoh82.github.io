@@ -171,13 +171,15 @@ function updateCartList() {
       </td>
     </tr>
   `).join(' ');
+	
+  updateCartNumber();
 
   let totalPrice = 0;
 
   cart.read().forEach(item => {
     totalPrice += item.quantity * 20;
   });
-
+	
   document.querySelector('.total span').innerHTML = `$${totalPrice.toFixed(2)}`
 }
 
