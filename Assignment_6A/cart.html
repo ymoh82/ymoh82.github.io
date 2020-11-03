@@ -6,6 +6,7 @@
         <!-- styles -->
         <link rel="stylesheet" href="css/index.css" type="text/css">
         <link rel="stylesheet" href="css/cart.css" type="text/css">
+        <script src="js/cart.js"></script>
         <script src="js/productdetail.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&     =Playfair+Display&family=Roboto&display=swap" rel="stylesheet">  
     </head>
@@ -62,41 +63,7 @@
                 </li>
                </ul>      
             </div>
-            <table class="itemdisplay">
-              <tr class="category">
-                <th class="th_des">Description</th>
-                <th class="th_siz">Size</th>
-                <th class="th_col">Color</th>
-                <th class="th_qua">Quantity</th>
-                <th class="th_rem"> Remove</th>
-                <th class="th_pri">Price</th>
-              </tr>
-              <tr class="first_row">
-                <td class="description">
-                  <div class="item"></div>
-                  <p>Harness, <br> Dog</p>
-                </td>
-                <td class="sizebox">
-                  <div class="size_box">S</div>
-                </td>
-                <td class="colorbox">
-                  <div class="color_box">
-                    <div class="colorcirc"></div>
-                  </div>
-                </td>
-                <td class="quantity">
-                  <div class="decrease">-</div>
-                  <div class="counter">1</div>
-                  <div class="increase">+</div>
-                </td>
-                <td class="remove">
-                  <div class="remove_box">X</div>
-                </td>
-                <td class="price">
-                  <span>$20.00</span>
-                </td>
-              </tr>
-            </table>
+            <table class="itemdisplay" id="cart-list"></table>
             <div class="total">
               <p>Total: <span>$40.00</span></p>
             </div>
