@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Muddy Paws Adventure</title>
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/cart.css" type="text/css">
+        <script src="js/productdetail.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&     =Playfair+Display&family=Roboto&display=swap" rel="stylesheet">  
+    </head>
+    
+    <body onload="goToCheckoutPage()">
+      <header>
+        <div class="logo">
+          <a href="index.html"><p>Muddy Paws Adventure</p>
+            <img src="muddypaw_img/dog-paw.png" width="20" height="20" alt="paw"></a>
+        </div>
+        <ul class="gnb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>                    
+          <li><a href="aboutus.html">About Us</a></li>                    
+        </ul>    
+        <div class="account">
+          <a href="#account">Sign In/Log In</a>
+        </div>
+        <div id="cartContainer">
+            <a href="cart.html"><img src="muddypaw_img/cart.png" id="cart_img" width="30" alt="cart"></a>
+            <div id="cartCount"> 0 Item(s) </div>
+        </div>    
+      </header>
+      <main>
+        <div id="shoppingcart">
+          <div class="wrapper">
+            <div class="title">
+              <h2>Order Summary</h2>
+            </div>
+            <div class="timelinebox">
+              <ul class="timeline" id="timeline">
+                <li class="li complete">
+                  <div class="status">
+                    <h4> Your Cart </h4>
+                  </div>
+                </li>
+                <li class="li">
+                 
+                  <div class="status">
+                    <h4> Shipping </h4>
+                  </div>
+                </li>
+                <li class="li">
+               
+                  <div class="status">
+                    <h4> Payment </h4>
+                  </div>
+                </li>
+                <li class="li">
+                 
+                  <div class="status">
+                    <h4> Confirmation </h4>
+                  </div>
+                </li>
+               </ul>      
+            </div>
+            <table class="itemdisplay">
+              <tr class="category">
+                <th class="th_des">Description</th>
+                <th class="th_siz">Size</th>
+                <th class="th_col">Color</th>
+                <th class="th_qua">Quantity</th>
+                <th class="th_rem"> Remove</th>
+                <th class="th_pri">Price</th>
+              </tr>
+              <tr class="first_row">
+                <td class="description">
+                  <div class="item"></div>
+                  <p>Harness, <br> Dog</p>
+                </td>
+                <td class="sizebox">
+                  <div class="size_box">S</div>
+                </td>
+                <td class="colorbox">
+                  <div class="color_box">
+                    <div class="colorcirc"></div>
+                  </div>
+                </td>
+                <td class="quantity">
+                  <div class="decrease">-</div>
+                  <div class="counter">1</div>
+                  <div class="increase">+</div>
+                </td>
+                <td class="remove">
+                  <div class="remove_box">X</div>
+                </td>
+                <td class="price">
+                  <span>$20.00</span>
+                </td>
+              </tr>
+            </table>
+            <div class="total">
+              <p>Total: <span>$40.00</span></p>
+            </div>
+
+            <div class="bottom">
+              <div class="promotion">
+                <p>If you have a promotion code, please enter below:</p>
+                <form class="promocode" action="action_page.php">
+                  <input type="text" placeholder="Please enter promotion code" name="promocode">
+                </form>
+                <button type ="discount" class="discountbtn">APPLY DISCOUNT</button>
+              <div class="checkout">
+                <button type ="checkoutbtn" class="checkoutbtn">CHECKOUT</button>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+</body>
+</html>
