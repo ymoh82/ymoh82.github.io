@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Muddy Paws Adventure</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <!-- styles -->
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/products.css" type="text/css">
+        <link rel="stylesheet" href="css/productdetail.css" type="text/css">
+        <script src="js/productdetail.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300& =Playfair+Display&family=Roboto&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+      <header>
+        <div class="wrapper">
+        <div class="logo">
+          <a href="index.html"><p>Muddy Paws Adventure</p>
+            <img src="muddypaw_img/dog-paw.png" width="20" height="20" alt="paw"></a>
+        </div>
+        <ul class="gnb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>                    
+          <li><a href="aboutus.html">About Us</a></li>                    
+        </ul>    
+        <div class="account">
+          <a href="#account">Sign In/Log In</a>
+        </div>
+        <div id="cartContainer">
+            <a href="cart.html"><img src="muddypaw_img/cart.png" id="cart_img" width="30" alt="cart" onclick="goToCheckoutPage()"></a>
+            <div id="cartCount"> 0 Item(s) </div>
+        </div>
+        </div>  
+      </header>
+      <main>
+        <div id="productdetail">
+          <div class="wrapper">
+            <div class="title">
+              <h2>Product Detail</h2>
+            </div>
+            <div class="detail">
+            <div class="productimg">
+              <div class="mainimg" id="main_img"></div>
+              <div class="subimg">
+                <div class="sub1" id="sub_img1"></div>
+                <div class="sub2" id="sub_img2"></div>
+                <div class="sub3" id="sub_img3"></div>
+              </div>
+            </div>
+            <div class="productinfo">
+              <h3>Harness</h3>
+              <h4>Dog</h4>
+              <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span>52 reviews</span>
+              </div>
+              <div class="tempbox">
+                <div class="price">&#36;20.00</div>
+                <div class="shipping">
+                  <p><span>Estimated Shipping Time</span><br>
+                  Arrives: Oct 10th - 12th</p>
+                </div>
+              </div>  
+              <div class="features">
+                <h5>Features + Benefits</h5>
+                <p>The quick release buckles and hook and loop straps for the neck, and adjustable chest belt with easy snap buckle and D-ring to hook standard leashes, provide extra comfort and ensures longer lasting durability. <br>
+                It’s light-weight and breathable, with very soft edge piping for secure comfort and fit.</p>
+              </div>
+              <div class="size">
+                <div class="sizetxt">
+                  <h5>Size</h5>
+                  <p id="p-size">X-Small: 8 to 11-in chest<br>
+                    Small: 11 to 15-in chest<br>
+                    Medium: 15 to 21-in chest<br>
+                    Large: 21 to 26-in chest</p>
+                </div>
+                <div class="boxes">
+                  <input type="button" class="box" id="btn-xs" name="size" value="XS" onclick="ChangeSize()">
+                  <input type="button" class="box" id="btn-s" name="size" value="S" onclick="ChangeSize1()">
+                  <input type="button" class="box" id="btn-m" name="size" value="M" onclick="ChangeSize2()">
+                  <input type="button" class="box" id="btn-l" name="size" value="L" onclick="ChangeSize3()">
+                </div>
+              </div>
+              <div class="color">
+                <h5>Color</h5>
+                <p id="p-color"></p>
+                <input type="button" class="dot blue" id="dotb" name="color" onclick="ChangeColor()">
+                <input type="button" class="dot darkblue" id="dotdb" name="color" onclick="ChangeColor1()">
+                <input type="button" class="dot brown" id="dotbr" name="color" onclick="ChangeColor2()">
+              </div>
+              
+              <!-- Add to cart button -->
+              <input type="button" class="addtocart" id="addToCartButton" value="ADD TO CART" onclick="addToCart()">
+            </div>
+
+          </div>
+          <div class="matchingitems">
+            <h2>Matching Items</h2>
+            <div class="recimgs">
+              <a href=""><div class="rec img1"></div></a>
+              <a href=""><div class="rec img2"></div></a>
+              <a href=""><div class="rec img3"></div></a>
+            </div>
+          </div>
+          <div class="reviews">
+            <h2>Reviews</h2>
+            <div class="review1">
+              <div class="prof">
+                <img src="muddypaw_img/prof.png" width="80" height="70">
+                <span>aliq34</span>
+                <div class="stars1">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="text">
+                <p>After purchasing numerous, differently-styled harnesses over the past 2 years, I finally found that fits my dog. This harness is soft and easy to adjust around his neck and tummy. </p>
+              </div>
+            </div>
+            <div class="review2">
+              <div class="prof">
+                <img src="muddypaw_img/prof.png" width="80" height="70">
+                <span>meho32</span>
+                <div class="stars2">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+              <div class="text">
+                <p>Happy with it! At first I was worried it was too small but found it is easily adjustable and fits well. After like <br> 5-10 walks with her pulling the belly strap loosens but can easily just tighten again.</p>
+              </div>
+            </div>
+
+          </div> 
+        </div>
+       </div>
+      </main>
+      
+    </body>
+  </html>
