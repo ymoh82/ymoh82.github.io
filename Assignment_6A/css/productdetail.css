@@ -1,0 +1,339 @@
+#productdetail{
+  width: 100%;
+  height:auto;
+  overflow:hidden;
+}
+#productdetail > .wrapper{
+  width: 100%;
+  margin-top:150px;
+  height: auto;
+}
+.wrapper>.title{
+  width: 100%;
+  height: 100px;
+}
+.wrapper>.title h2{
+  float:left;
+  margin-left: 100px;
+  font-size: 3rem;
+  font-family:"Lato", serif;
+}
+.wrapper>.detail{
+  width: 100%;
+  height: 600px;
+  display:flex;
+}
+.detail>.productimg{
+  margin-left: 100px;
+  height: auto;
+}
+.productimg>.mainimg{
+  width: 400px;
+  height: 400px;
+  background-image: url("../muddypaw_img/item3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.productimg>.subimg{
+  width: 400px;
+  height: 150px;
+  display:flex;
+  align-items: center;
+  justify-content: left;
+}
+.subimg>.sub1{
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-image: url("../muddypaw_img/lbsub1.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
+}
+.subimg>.sub2{
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-image: url("../muddypaw_img/lbsub2.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
+}
+.subimg>.sub3{
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-image: url("../muddypaw_img/lbsub3.png");
+  background-position: center;
+  background-size: cover;
+}
+.detail>.productinfo{
+  margin-left: 100px;
+  width: 700px;
+  height: auto;
+}
+.productinfo h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.625rem;
+}
+.productinfo h4{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.productinfo .stars{
+  margin-top: 10px;
+  margin-bottom:10px;
+  width: 200px;
+  height: auto;
+}
+.fa{
+  color: #C4C4C4;
+}
+.checked{
+  color: #FEE14B;
+}
+.productinfo .tempbox{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.tempbox .shipping{
+  width: 220px;
+  height: auto;
+  margin-left: 150px;
+}
+.shipping span{
+  font-size: 1.125rem;
+  font-weight: bold; 
+}
+.tempbox .price{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.125rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.productinfo .features{
+  width: 700px;
+  height:110px;
+  overflow:hidden;
+  margin-bottom: 20px;
+
+}
+.features h5{
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+.features p{
+  width: 600px;
+  font-size: 1rem;
+}
+.productinfo .size{
+  width: 700px;
+  height:110px;
+  overflow:hidden;
+  display: flex;
+  margin-bottom: 20px;
+}
+.size .sizetxt{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.size h5{
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+.size p{
+  width: 300px;
+  font-size: 1rem;
+}
+.size .boxes{
+  margin-top: 40px;
+  margin-left: -60px;
+  width: 240px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes .box{
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  margin-right: 10px;
+  padding: 17px 0;
+}
+.highlight{
+  background-color: #000;
+  color: white;
+}
+.productinfo .color{
+  width: 700px;
+  height:100px;
+  overflow:hidden;
+}
+.color h5{
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-family: 'Playfair Display', serif;
+  display:flex;
+}
+.color .dot {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.darkblue{
+  background-color: #051CB5;
+}
+.blue{
+  background-color: #0F628D;
+}
+.brown{
+  background-color: #601414;
+}
+
+.productinfo .add{
+  width: 300px;
+  height:85px;
+  overflow:hidden;
+}
+.addtocart{
+  margin-top: 20px;
+  width: 240px;
+  height: 60px;
+  background-color: #30D354; 
+  border: none;
+  color: white;
+  padding: auto;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.wrapper>.matchingitems{
+  margin-top: 120px;
+  width: 100%;
+  height: 300px;
+}
+.matchingitems h2{
+  margin-left: 100px;
+  font-size: 3rem;
+  font-family:"Lato", serif;
+}
+.matchingitems .recimgs{
+  margin-left: 100px;
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+}
+.recimgs .rec{
+  margin-top: 30px;
+  width: 230px;
+  height: 160px;
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.img1{
+  background-image: url("../muddypaw_img/item8.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.img2{
+  background-image: url("../muddypaw_img/item9.png");
+  background-position: center;
+  background-size: cover;
+}
+.img3{
+  background-image: url("../muddypaw_img/img3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.wrapper>.reviews{
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.reviews h2{
+  float:left;
+  margin-left: 100px;
+  font-size: 3rem;
+  font-family:"Lato", serif;
+}
+.reviews >.review1{
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 100%;
+  height: 200px;
+}
+.prof{
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.prof img{
+  display: flex;
+}
+.prof >span{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  display: flex;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.prof>.stars1{
+  margin-left: 20px;
+  width: 100px; 
+  height: auto;
+}
+.prof>.stars2{
+  margin-left: 20px;
+  width: 100px; 
+  height: auto;
+}
+.review1>.text{
+  margin-top: 10px;
+  width: 900px;
+  height: 100px;
+}
+.text>p{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+}
+.reviews >.review2{
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 100%;
+  height: 200px;
+}
+.review2>.text{
+  margin-top: 10px;
+  width: 900px;
+  height: 100px;
+}
