@@ -1,0 +1,192 @@
+/*digital interface1*/
+#intro1 .wrapper > .row {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.row #mainimg{
+  margin-top: 100px;
+  width:100%;
+  height:500px;
+  background-image:url("../img_p/digital1.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+#introtext{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+#introtext h3{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-family: freight-display-pro, serif;
+  font-weight: 600;
+  font-style: normal;
+}
+#introtext h4{
+  font-size: 1.2rem;
+}
+#introtext .introleft{
+  float:left;
+  width: 30%;
+  height: auto;
+  margin-left: 80px;
+}
+.introleft .section{
+  margin-top: 30px;
+}
+#introtext .introright{
+  margin-top: 30px;
+}
+
+#demovideo {
+  width: 100%;
+  height: auto;
+}
+#demovideo .video{
+  margin-left: 300px;
+}
+
+#process{
+  width: 100%;
+  height: auto;
+}
+#process h3{
+  font-size: 1.3rem;
+  margin-left: 140px;
+  margin-bottom: 30px;
+}
+#process p{
+  margin-left: 140px;
+}
+#process .content{
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.content .affinitydiagram{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.affinitydiagram .box{
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 40%;
+  padding-bottom: 28%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.diagram1{
+  background-image:url("../img_p/digitalaffinity.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+.diagram2{
+  background-image:url("../img_p/predash.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+.diagram3{
+  background-image:url("../img_p/postdash.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+
+#final .finalimg{
+  width: 100%;
+  height: auto;
+}
+#final h3{
+  font-size: 1.3rem;
+  margin-left: 140px;
+}
+
+
+.child {
+  padding: 5%; 
+  overflow: hidden;
+}
+
+.child>.box{
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 70%;
+  padding-bottom: 38%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.child .sketch1{
+  background-image:url("../img_p/digitalwiref1.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+.child .sketch2{
+  background-image:url("../img_p/digitalwiref2.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+} 
+
+.child .mid1{
+  background-image:url("../img_p/digitalmid1.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+
+}
+.child .mid2{
+  background-image:url("../img_p/digitalmid2.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+} 
+
+.child .motion{
+  background-image:url("../img_p/digitalmotion.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+
+}
+.child .control{
+  background-image:url("../img_p/digitalphysicalcontrol.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+} 
+
+.child .final1{
+  float:left;
+  background-image:url("../img_p/digitalfinal1.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+
+}
+.child .final2{
+  float:right;
+  background-image:url("../img_p/digitalfinal2.png");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+#final .finaltext{
+  width: 80%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
+
+}

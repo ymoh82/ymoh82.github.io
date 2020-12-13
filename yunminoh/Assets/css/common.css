@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* RESET */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;line-height:160%;box-sizing:border-box}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+fieldset,img {border:0 none;vertical-align: top;}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+label {cursor: pointer;}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {height: 100%;background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Nanum Gothic',sans-serif;color:#333} 
+table {width: 100%;border-collapse: collapse;border-spacing: 0;}
+caption {visibility: hidden;width: 0;height: 0;font-size: 0;line-height: 0;}
+a:link, a:visited { color:#666; text-decoration:none;}
+a:active, a:hover { text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/* 접근성 메뉴  */
+#skip a { position:absolute;top:-6.250rem;width:18.75rem;}
+#skip a:active,
+#skip a:focus { display:block; position:absolute; top:0; width:100%; height:1.250rem; background:#333;font-weight:bold; color:#fff; text-align:center;}
+
+/* 폼 태그 */
+.input {width: 100%;padding:0 0.625rem;border: 1px solid #d8d8d8;line-height: 1.75rem;}
+.input::-moz-placeholder { color: #bbb; opacity: 1;}
+.input:-ms-input-placeholder { color: #bbb;}
+.input::-webkit-input-placeholder { color: #bbb;}
+.radio {position: absolute;overflow: hidden;width: 1px;height: 1px;clip:rect(1px, 1px, 1px, 1px);}
+.radio + label {display: inline-block;padding: 0 5px;font-size: 13px;vertical-align: middle;}
+.radio + label > span {content: '';display: inline-block;position: relative;width: 12px;height: 12px;margin-right: 8px;border: 1px solid #727272; -webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;vertical-align: middle;}
+.radio:checked + label > span:after {content: '';position: absolute;top: 2px;right: 2px;bottom: 2px;left: 2px;height: auto;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;background-color: #727272;}
+
+/* 그리드 시스템 */
+.row {margin: 0 -10px;}
+.row:after {content: '';display: block;overflow: hidden;clear: both;}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {padding: 0 10px;}
+
+
+/* 그리드 시스템 */
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; }
+.col-12 { width: 100%; }
+.col-11 { width: 91.66666667%; }
+.col-10 { width: 83.33333333%; }
+.col-9 { width: 75%;}
+.col-8 { width: 66.66666667%; }
+.col-7 { width: 58.33333333%; }
+.col-6 { width: 50%;}
+.col-5 { width: 41.66666667%; }
+.col-4 { width: 33.33333333%; }
+.col-3 { width: 25%; }
+.col-2 { width: 16.66666667%; }
+.col-1 { width: 8.33333333%; }
+
+.xs-show, .sm-show, .md-show {display: none;}
+
+/* 공통 클래스 */
+.clearfix:after {display:block;visibility: hidden;clear:both;height: 0;content:"";}
+.hidden {overflow: hidden;position:absolute; width:1px; height:1px;clip:rect(1px 1px 1px 1px);}
+
+
+
+/* rem 예제 */
+html, body {font-size: 16px;}
+h1 {font-size:5rem}
+
+
+
