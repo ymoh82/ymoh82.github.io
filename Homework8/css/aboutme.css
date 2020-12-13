@@ -1,0 +1,56 @@
+/*aboutme*/
+#aboutme .wrapper > .row {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+#aboutme .row .contents{
+  float:left;
+  margin-top:200px;
+  margin-left:240px;
+}
+.contents #circ{
+  margin: 100px auto;
+  display:inline-block;
+}
+#circ .thumb {
+  width:240px;
+  height:240px;
+  border-radius:50%;
+  background-image:url("../portfolio_img/yunmin.JPG");
+  background-size:cover;
+  background-position: top;
+  margin:auto;
+}
+.row .contents_context{
+  float:right;
+  margin-top: 200px;
+  margin-right: 150px;
+  width: 500px;
+  color: #2B2E40;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.contents_context h2{
+  font-size: 2rem;
+  margin-bottom:20px;
+  font-family: freight-display-pro, serif;
+}
+.contents_context p{
+  font-size: 1.05rem;
+  line-height: 1.4rem;
+}
+.contents_context button{
+  margin-top:30px;
+}
+.custom-btn {
+  padding: 10px 25px;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
