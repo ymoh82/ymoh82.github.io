@@ -1,37 +1,3 @@
- $(function(){
-    $(".menu a").click(function(e){
-        e.preventDefault();
-        var target = $(this).attr("href");
-        $(".menu a").removeClass("active");
-        $(this).addClass("active");
-        $("#work > div").hide();
-        $(target).show();
-    });
-    /*toggle switch*/
-    $("#toggleThis").click(function(){
-        $("#menu_content").slideToggle(1500);
-    });
-});
-
-/*Animated Text effect on top introduction part*/
-var intervalID = setInterval(function(){
-    // every 4 seconds execute following
-    var visibleWord = document.getElementsByClassName('visible')[0],
-        nextWord = visibleWord.nextSibling;
-    // check if nextSibling is textnode (whitespace) - if so get next next sibling. 
-    if(nextWord.nodeType == 3) nextWord = nextWord.nextSibling;
-    // if there is a next node 
-    if(!(nextWord == null)) {
-      visibleWord.setAttribute('class','hidden');
-      nextWord.setAttribute('class','visible');
-    } else {
-      clearInterval(intervalID);
-    }
-  }, 4000)
-
-
-/////////////////////////////////////////////////////////
-
 window.onload=function(){
     /*darkmode*/
     const chk = document.getElementById('chk');
@@ -82,3 +48,36 @@ window.onload=function(){
   }
 
 
+  $(function(){
+    $(".menu a").click(function(e){
+        e.preventDefault();
+        var target = $(this).attr("href");
+        $(".menu a").removeClass("active");
+        $(this).addClass("active");
+        $("#work > div").hide();
+        $(target).show();
+    });
+    /*toggle switch*/
+    $("#toggleThis").click(function(){
+        $("#menu_content").slideToggle(1500);
+    });
+});
+
+/*Animated Text effect on top introduction part*/
+var intervalID = setInterval(function(){
+    // every 4 seconds execute following
+    var visibleWord = document.getElementsByClassName('visible')[0],
+        nextWord = visibleWord.nextSibling;
+    // check if nextSibling is textnode (whitespace) - if so get next next sibling. 
+    if(nextWord.nodeType == 3) nextWord = nextWord.nextSibling;
+    // if there is a next node 
+    if(!(nextWord == null)) {
+      visibleWord.setAttribute('class','hidden');
+      nextWord.setAttribute('class','visible');
+    } else {
+      clearInterval(intervalID);
+    }
+  }, 4000)
+
+
+/////////////////////////////////////////////////////////

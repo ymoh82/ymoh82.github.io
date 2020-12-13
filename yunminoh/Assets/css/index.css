@@ -26,7 +26,8 @@ html, body{
 }
 /*darkmode swith*/
 body.dark {
-	background-color: #292C35;
+  background-color: #292C35;
+  color: #fff;
 }
 
 .checkbox {
@@ -429,36 +430,46 @@ header .wrapper > .row {
 }
 
 .center-div:hover .hvrbox-layer_top{
-    opacity: 90%;
+    opacity: 95%;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     border-radius: 30px;
 }
 
-.center-div:hover .adidas{
-    background-color: #f39c12;
+.center-div:hover .hvrbox-text{
+  display: inline-block;
 }
 
-.center-div:hover .yogamat{
-    background-color: #B24098;
+.center-div:hover .adidas{
+  background-color: #ED5B27;
+}
+
+.center-div:hover .ksteats{
+    background-color: #F3A727;
 }
 
 .center-div:hover .petjoy{
-    background-color: #7F80FE;
+    background-color: #628AF6;
 }
+.center-div:hover .yogamat{
+  background-color: #7C1387;
+}
+
 
 .hvrbox-text {
     margin-left: 50px;
     margin-top: 150px;
-    width: 500px;
+    width: 550px;
     height: 200px;
+    display: none;
 }
 
 .hvrbox-text h1{
     color: #fff;
-    font-size:2.4rem;
-    font-weight: bold;
+    font-family: freight-display-pro, serif;
+    font-size:2.6rem;
+    font-weight: 500;
 }
 .hvrbox-text h2{
     color: #fff;
@@ -474,20 +485,19 @@ header .wrapper > .row {
   background-image: url(../img_p/adidas.png);
   background-position: center;
 }
-
-#yogamat{
-  background-image: url(../img_p/yogamat.png);
-  background-position: 85% 35%;
+#ksteats{
+  background-image: url(../img_p/KSTeats.png);
+  background-position: center;
 }
 #petjoy{
     background-image: url(../img_p/petjoy.png);
     background-position: center;
   }
-#ksteats{
-    background-image: url(../img_p/KSTeats.png);
-    background-position: center;
-}
 
+#yogamat{
+  background-image: url(../img_p/yogamat.gif);
+  background-position: center;
+}
 
 
 

@@ -1,4 +1,13 @@
 /*digital interface1*/
+
+h3{
+  font-family: freight-display-pro, serif;
+  color: #ED5B27;
+  margin-bottom: 50px;
+}
+p{
+  font-size: 1.2rem;
+}
 #intro1 .wrapper > .row {
   position: relative;
   width: 100%;
@@ -8,46 +17,67 @@
 .row #mainimg{
   margin-top: 100px;
   width:100%;
-  height:500px;
-  background-image:url("../img_p/digital1.png");
+  height:700px;
+  background-image:url("../img_p/adidas.png");
   background-size:cover;
   background-position: top;
   margin:auto;
 }
 #introtext{
-  width: 100%;
+  width: 80%;
   height: auto;
   display: inline-block;
   margin-top: 80px;
   margin-bottom: 30px;
+  text-align: left;
 }
 #introtext h3{
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
-  font-family: freight-display-pro, serif;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
 }
 #introtext h4{
   font-size: 1.2rem;
 }
-#introtext .introleft{
-  float:left;
-  width: 30%;
+#introtext .myrole {
+  width: 100%;
   height: auto;
-  margin-left: 80px;
-}
-.introleft .section{
   margin-top: 30px;
+  margin-left: 140px;
+
 }
-#introtext .introright{
+.myrole .section{
+  margin-top: 10px;
+}
+.section h4{
+  color: #ED5B27;
+}
+.timeline {
+  float:left;
+  display: inline-block;
+}
+.team{
+  float:right;
+  display: inline-block;
+}
+.roletext{
+  margin-top: 50px;
+  display: inline-block;
+}
+#introtext .description{
+  width: 100%;
+  height: auto;
   margin-top: 30px;
+  margin-left: 140px;
+
 }
 
 #demovideo {
   width: 100%;
   height: auto;
 }
+
 #demovideo .video{
   margin-left: 300px;
 }
@@ -56,8 +86,9 @@
   width: 100%;
   height: auto;
 }
+
 #process h3{
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-left: 140px;
   margin-bottom: 30px;
 }
@@ -65,62 +96,48 @@
   margin-left: 140px;
 }
 #process .content{
-  width: 100%;
+  width: 90%;
   height: auto;
-  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
 }
 .content .affinitydiagram{
-  width: 100%;
+  width: 80%;
   height: auto;
   display: inline-block;
 }
 .affinitydiagram .box{
   border: 1px solid #fff;
   box-sizing: border-box;
-  width: 40%;
-  padding-bottom: 28%;
+  width: 80%;
+  padding-bottom: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 10px 250px;
 }
-.diagram1{
+.diagram{
   background-image:url("../img_p/digitalaffinity.png");
   background-size:cover;
-  background-position: top;
-  margin:auto;
+  background-position: center;
 }
-.diagram2{
-  background-image:url("../img_p/predash.png");
-  background-size:cover;
-  background-position: top;
-  margin:auto;
+.diagramtext p{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
-.diagram3{
-  background-image:url("../img_p/postdash.png");
-  background-size:cover;
-  background-position: top;
-  margin:auto;
-}
-
-#final .finalimg{
-  width: 100%;
-  height: auto;
-}
-#final h3{
-  font-size: 1.3rem;
-  margin-left: 140px;
-}
-
 
 .child {
-  padding: 5%; 
+  padding: 2%; 
   overflow: hidden;
 }
 
 .child>.box{
   border: 1px solid #fff;
   box-sizing: border-box;
-  width: 70%;
-  padding-bottom: 38%;
+  width: 100%;
+  padding-bottom: 58%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -152,6 +169,17 @@
   background-position: top;
   margin:auto;
 } 
+.motionimg{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-left: 300px;
+}
+.controlimg {
+  width: 100%;
+  height: auto;
+  display: inline-block;margin-left: 300px;
+}
 
 .child .motion{
   background-image:url("../img_p/digitalmotion.png");
@@ -161,7 +189,7 @@
 
 }
 .child .control{
-  background-image:url("../img_p/digitalphysicalcontrol.png");
+  background-image:url("../img_p/Globe_trimmed.gif");
   background-size:cover;
   background-position: top;
   margin:auto;
@@ -171,7 +199,7 @@
   float:left;
   background-image:url("../img_p/digitalfinal1.png");
   background-size:cover;
-  background-position: top;
+  background-position: center;
   margin:auto;
 
 }
@@ -179,14 +207,19 @@
   float:right;
   background-image:url("../img_p/digitalfinal2.png");
   background-size:cover;
-  background-position: top;
+  background-position: center;
   margin:auto;
 }
-#final .finaltext{
+
+#final h3{
+  font-size: 2rem;
+  margin-left: 140px;
+}
+
+#final .finaltext p{
   width: 80%;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 300px;
-
 }
